@@ -181,7 +181,67 @@ function initializeRevealAnimations() {
 	});
 }
 
+function initializeCampaignModal() {
+	if (sessionStorage.getItem("campaignModalDismissed") === "1") {
+		return;
+	}
+
+	const assessmentUrl = "https://app.middle.finance/ref/9f5745d5-ed53-4b26-9bb2-8b21437cd93b";
+	const bookingUrl = "https://bookings.cloud.microsoft/book/AppointmentwithDhirajUloansFinance@uloansfinance.com.au/?ismsaljsauthenabled";
+
+	const modal = document.createElement("div");
+	modal.className = "campaign-modal";
+	modal.setAttribute("role", "dialog");
+	modal.setAttribute("aria-modal", "true");
+	modal.setAttribute("aria-labelledby", "campaign-modal-title");
+	modal.innerHTML = ""
+		+ "<div class=\"campaign-modal__dialog\">"
+		+ "  <div class=\"campaign-modal__header\">"
+		+ "    <h2 class=\"campaign-modal__title\" id=\"campaign-modal-title\">Complimentary Home Loan Assessment</h2>"
+		+ "    <button class=\"campaign-modal__close\" type=\"button\" aria-label=\"Close campaign modal\">&times;</button>"
+		+ "  </div>"
+		+ "  <p class=\"campaign-modal__lead\">Complete your assessment for a chance to win.</p>"
+		+ "  <p class=\"campaign-modal__highlight\"><strong>Win a $500 Gift Card!</strong></p>"
+		+ "  <p class=\"campaign-modal__lead\">Complete your assessment for a chance to win</p>"
+		+ "  <ul class=\"campaign-modal__list\">"
+		+ "    <li>No obligation</li>"
+		+ "    <li>Range of lending options</li>"
+		+ "    <li>Personalised loan comparison</li>"
+		+ "    <li>Expert advice</li>"
+		+ "  </ul>"
+		+ "  <div class=\"campaign-modal__actions\">"
+		+ "    <a class=\"btn\" href=\"" + assessmentUrl + "\">Get free assessment</a>"
+		+ "    <a class=\"btn btn-ghost\" href=\"" + bookingUrl + "\">Book appointment</a>"
+		+ "  </div>"
+		+ "</div>";
+
+	document.body.appendChild(modal);
+
+	function closeModal() {
+		modal.classList.remove("is-open");
+		sessionStorage.setItem("campaignModalDismissed", "1");
+	}
+
+	modal.querySelector(".campaign-modal__close").addEventListener("click", closeModal);
+	modal.addEventListener("click", function (event) {
+		if (event.target === modal) {
+			closeModal();
+		}
+	});
+
+	document.addEventListener("keydown", function (event) {
+		if (event.key === "Escape" && modal.classList.contains("is-open")) {
+			closeModal();
+		}
+	});
+
+	window.setTimeout(function () {
+		modal.classList.add("is-open");
+	}, 1500);
+}
+
 document.querySelectorAll("[data-loan-calculator]").forEach(setupCalculator);
 initializeSnapshotForm();
 initializeCallbackForm();
 initializeRevealAnimations();
+initializeCampaignModal();

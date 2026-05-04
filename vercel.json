@@ -1,0 +1,21 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/", "destination": "/prototype/index.html" },
+    { "source": "/about", "destination": "/prototype/about.html" },
+    { "source": "/calculators", "destination": "/prototype/calculators.html" },
+    { "source": "/contact", "destination": "/prototype/contact.html" },
+    { "source": "/faq", "destination": "/prototype/faq.html" },
+    { "source": "/latest-updates", "destination": "/prototype/latest-updates.html" },
+    { "source": "/mortgage-broker-pakenham", "destination": "/prototype/mortgage-broker-pakenham.html" },
+    { "source": "/llm.txt", "destination": "/prototype/llm.txt" },
+    { "source": "/robots.txt", "destination": "/prototype/robots.txt" },
+    { "source": "/sitemap.xml", "destination": "/prototype/sitemap.xml" },
+    { "source": "/site.webmanifest", "destination": "/prototype/site.webmanifest" },
+    { "source": "/styles.css", "destination": "/prototype/styles.css" },
+    { "source": "/script.js", "destination": "/prototype/script.js" },
+    { "source": "/assets/(.*)", "destination": "/prototype/assets/$1" },
+    { "source": "/(.*)", "destination": "/prototype/$1" }
+  ]
+}

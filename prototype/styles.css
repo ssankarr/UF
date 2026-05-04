@@ -12,5 +12,7 @@
 .campaign-modal__actions{display:flex;flex-wrap:wrap;gap:.65rem}
 .campaign-modal__actions .btn{flex:1 1 220px}
 .footer-social{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:.4rem}
-.footer-social a{display:inline-flex;align-items:center;border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:.35rem .7rem;font-size:.82rem;font-weight:700;color:#e8f1ff;transition:color 180ms ease,border-color 180ms ease,background-color 180ms ease}
+.footer-social a{display:inline-flex;align-items:center;gap:.4rem;border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:.35rem .7rem;font-size:.82rem;font-weight:700;color:#e8f1ff;transition:color 180ms ease,border-color 180ms ease,background-color 180ms ease}
+.footer-social a svg{width:16px;height:16px;display:block;fill:currentColor;flex:none}
+.footer-social .social-label{line-height:1}
 .footer-social a:hover,.footer-social a:focus-visible{color:#7fd8ff;border-color:#7fd8ff;background:rgba(127,216,255,.08)}

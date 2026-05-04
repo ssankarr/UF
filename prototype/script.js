@@ -182,10 +182,6 @@ function initializeRevealAnimations() {
 }
 
 function initializeCampaignModal() {
-	if (sessionStorage.getItem("campaignModalDismissed") === "1") {
-		return;
-	}
-
 	const assessmentUrl = "https://app.middle.finance/ref/9f5745d5-ed53-4b26-9bb2-8b21437cd93b";
 	const bookingUrl = "https://bookings.cloud.microsoft/book/AppointmentwithDhirajUloansFinance@uloansfinance.com.au/?ismsaljsauthenabled";
 
@@ -219,7 +215,6 @@ function initializeCampaignModal() {
 
 	function closeModal() {
 		modal.classList.remove("is-open");
-		sessionStorage.setItem("campaignModalDismissed", "1");
 	}
 
 	modal.querySelector(".campaign-modal__close").addEventListener("click", closeModal);

@@ -182,6 +182,11 @@ function initializeRevealAnimations() {
 }
 
 function initializeCampaignModal() {
+	const isHomePage = window.location.pathname === "/" || window.location.pathname.endsWith("/index.html");
+	if (!isHomePage) {
+		return;
+	}
+
 	const assessmentUrl = "https://app.middle.finance/ref/9f5745d5-ed53-4b26-9bb2-8b21437cd93b";
 	const bookingUrl = "https://bookings.cloud.microsoft/book/AppointmentwithDhirajUloansFinance@uloansfinance.com.au/?ismsaljsauthenabled";
 
@@ -232,7 +237,7 @@ function initializeCampaignModal() {
 
 	window.setTimeout(function () {
 		modal.classList.add("is-open");
-	}, 1500);
+	}, 12000);
 }
 
 document.querySelectorAll("[data-loan-calculator]").forEach(setupCalculator);

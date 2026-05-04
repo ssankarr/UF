@@ -240,8 +240,19 @@ function initializeCampaignModal() {
 	}, 12000);
 }
 
-document.querySelectorAll("[data-loan-calculator]").forEach(setupCalculator);
-initializeSnapshotForm();
-initializeCallbackForm();
-initializeRevealAnimations();
-initializeCampaignModal();
+function runWhenIdle(task) {
+	if ("requestIdleCallback" in window) {
+		window.requestIdleCallback(task, { timeout: 1200 });
+		return;
+	}
+
+	window.setTimeout(task, 0);
+}
+
+runWhenIdle(function () {
+	document.querySelectorAll("[data-loan-calculator]").forEach(setupCalculator);
+});
+runWhenIdle(initializeSnapshotForm);
+runWhenIdle(initializeCallbackForm);
+runWhenIdle(initializeRevealAnimations);
+runWhenIdle(initializeCampaignModal);

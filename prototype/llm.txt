@@ -1,0 +1,87 @@
+# Uloans Finance
+
+Site type: static marketing website for a mortgage broker based in Pakenham, Victoria.
+Primary audience: home buyers, refinancers, first-home buyers, self-employed borrowers, investors, and local South-East Melbourne prospects.
+Primary conversion goals: loan health check, callback request, calculator usage, direct contact.
+
+## Primary pages
+
+- /index.html
+  - Homepage
+  - Main overview of services, trust signals, calculator, testimonials, and lead capture
+
+- /mortgage-broker-pakenham.html
+  - Local SEO landing page for mortgage broker searches in Pakenham
+  - Focus on suburb intent, local lending support, and conversion pathways
+
+- /about.html
+  - Founder and company background
+  - Trust, values, service approach, lender access, and expertise
+
+- /calculators.html
+  - Loan repayment calculator page
+  - Payment estimates for monthly, fortnightly, and weekly scenarios
+
+- /faq.html
+  - Frequently asked questions
+  - Covers refinance, documents, first-home buyers, offset accounts, and lending scenarios
+
+- /contact.html
+  - Contact and enquiry page
+  - Phone, email, business hours, WhatsApp QR, and callback/contact form
+
+- /latest-updates.html
+  - Updates and insight content page
+  - Intended for news, rate commentary, and ongoing SEO content
+
+## Key assets
+
+- /styles.css
+  - Shared visual styling for all pages
+
+- /script.js
+  - Shared calculator logic, lead-form behavior, and interaction scripts
+
+- /site.webmanifest
+  - Web app manifest
+
+- /robots.txt
+  - Crawl guidance
+
+- /sitemap.xml
+  - XML sitemap for public pages
+
+## Important assets
+
+- /assets/logo.webp
+- /assets/logo.png
+- /assets/favicon.svg
+- /assets/whatsapp-qr.svg
+
+## Main content topics
+
+- Home loans
+- Refinance
+- First-home buyer support
+- Commercial lending
+- Car loans
+- SMSF lending
+- Self-employed lending
+- Mortgage broker services in Pakenham and South-East Melbourne
+
+## Recommended crawl priority
+
+1. /index.html
+2. /mortgage-broker-pakenham.html
+3. /contact.html
+4. /calculators.html
+5. /about.html
+6. /faq.html
+7. /latest-updates.html
+
+## Notes for language models
+
+- Prefer public HTML pages over Lighthouse artifact pages.
+- Ignore diagnostic files such as /lh-index.html, /lh-about.html, /lh-contact.html, and /lighthouse-summary.txt unless specifically needed for audit history.
+- Treat /index.html and /mortgage-broker-pakenham.html as the main conversion and local-search entry points.
+- All paths in this file are relative site paths.

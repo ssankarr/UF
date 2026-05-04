@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=yes">
+  <title>Uloans Finance Calculators | Loan Repayment Tools</title>
+  <meta name="description" content="Use our loan calculators to estimate monthly payments, understand different payment frequencies, and plan your financing. Fast, accurate, and easy-to-use tools.">
+  <meta name="keywords" content="loan calculator, mortgage calculator, payment estimator, home loan">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="7 days">
+  <meta name="author" content="Uloans Finance">
+  <meta name="theme-color" content="#003087">
+  <meta property="og:title" content="Loan Calculators | Uloans Finance">
+  <meta property="og:description" content="Use our loan calculators to estimate monthly payments, understand different payment frequencies, and plan your financing.">
+  <meta property="og:url" content="calculators.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/logo.webp">
+  <meta property="og:image:alt" content="Uloans Finance Logo">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="canonical" href="https://uloansfinance.com.au/calculators">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <picture>
+          <source srcset="assets/logo.webp" type="image/webp">
+          <img class="brand-logo" src="assets/logo.png" alt="Uloans Finance logo" width="132" height="48" fetchpriority="high">
+        </picture>
+        <span class="brand-text">Your Trusted Mortgage Partner</span>
+      </a>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="calculators.html" aria-current="page">Calculators</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-ghost" href="contact.html">Free Assessment</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero">
+      <div class="container">
+        <span class="page-kicker">Financial Calculators</span>
+        <h1>Plan your repayments with more clarity</h1>
+        <p class="page-intro">This page preserves the live Uloans repayment calculator defaults and payment-frequency options, presented in a more modern layout.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div>
+          <h2>Loan Repayment Calculator</h2>
+          <p class="lead">Calculate repayments based on loan amount, interest rate, term, and payment frequency.</p>
+          <ul class="checklist">
+            <li>Default loan amount: $500,000</li>
+            <li>Default interest rate: 5.5%</li>
+            <li>Default loan term: 25 years</li>
+          </ul>
+        </div>
+        <form class="calc" data-loan-calculator novalidate>
+          <label for="calc-amount">Loan amount</label>
+          <input id="calc-amount" data-calc="amount" type="number" min="10000" max="2000000" value="500000" required>
+
+          <label for="calc-rate">Interest rate (%)</label>
+          <input id="calc-rate" data-calc="rate" type="number" min="1" max="15" step="0.01" value="5.5" required>
+
+          <label for="calc-term">Loan term (years)</label>
+          <input id="calc-term" data-calc="term" type="number" min="1" max="30" value="25" required>
+
+          <label for="calc-frequency">Payment frequency</label>
+          <select id="calc-frequency" data-calc="frequency" required>
+            <option value="monthly">Monthly</option>
+            <option value="fortnightly">Fortnightly</option>
+            <option value="weekly">Weekly</option>
+          </select>
+
+          <button class="btn" type="submit">Calculate repayment</button>
+          <div class="calc-results" aria-live="polite">
+            <p class="repayment" data-calc-output="repayment">Monthly payment: $3,070.44</p>
+            <p class="repayment-sub" data-calc-output="interest">Total interest: $421,131.24</p>
+            <p class="repayment-sub" data-calc-output="payment">Total payment: $921,131.24</p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container service-grid">
+        <article class="card"><h3>Monthly</h3><p>Best for comparing with standard lender repayment schedules and budgeting tools.</p></article>
+        <article class="card"><h3>Fortnightly</h3><p>Useful for salary-aligned planning when you are paid every two weeks.</p></article>
+        <article class="card"><h3>Weekly</h3><p>Helps borrowers visualize smaller recurring payment patterns.</p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container band cta-panel">
+        <div>
+          <h2>Need more detail?</h2>
+          <p>Use this calculator for planning, then speak with Uloans for a personalized assessment against your financial situation.</p>
+        </div>
+        <div>
+          <a class="btn" href="contact.html">Contact Uloans</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div>
+        <picture>
+          <source srcset="assets/logo.webp" type="image/webp">
+          <img class="brand-logo" src="assets/logo.png" alt="Uloans Finance logo" width="124" height="45" loading="lazy" decoding="async">
+        </picture>
+        <p>© 2026 ABN 63 686 014 175 | Credit Representative No. 568139 | Authorised under ACL No. 554010.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="latest-updates.html">Latest Updates</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+      <div class="footer-contact">
+        <a href="mailto:info@uloansfinance.com.au">info@uloansfinance.com.au</a>
+        <a href="tel:+61451542722">+61 451 542 722</a>
+        <span>Pakenham, Victoria, Australia</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="mobile-cta" role="region" aria-label="Quick actions">
+    <a href="contact.html">Free Assessment</a>
+    <a href="https://wa.me/61451542722">WhatsApp</a>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
+

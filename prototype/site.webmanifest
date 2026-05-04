@@ -1,0 +1,16 @@
+{
+  "name": "Uloans Finance",
+  "short_name": "Uloans",
+  "description": "Mortgage broker in Pakenham and across Australia for home loans, refinance, first-home buyers, car loans, and commercial finance.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#003087",
+  "icons": [
+    {
+      "src": "assets/logo.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ]
+}
